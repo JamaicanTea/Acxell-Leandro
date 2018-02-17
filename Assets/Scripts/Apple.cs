@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Apple : MonoBehaviour {
+	public static float bottomY = -20f; //where the apple prefab will be destroyed
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+	{
+		if (transform.position.y < bottomY) 
+		{
+			Destroy (this.gameObject);
+		}
 	}
 }
