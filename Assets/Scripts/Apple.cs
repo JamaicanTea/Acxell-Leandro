@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Apple : MonoBehaviour {
-	public static float bottomY = -20f; //where the apple prefab will be destroyed
+	public static float bottomY = -15f; //where the apple prefab will be destroyed
 
 	void Update () 
 	{

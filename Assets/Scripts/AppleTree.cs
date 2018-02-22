@@ -33,7 +33,7 @@ public class AppleTree : MonoBehaviour {
 		//changing directions
 		if (pos.x < -leftAndRightEdge) { //if by any chance the tree runs far from the accepted distance..
 			speed = Mathf.Abs (speed); //move right
-		} else if (pos.x < leftAndRightEdge) {
+		} else if (pos.x > leftAndRightEdge) {
 			speed = -Mathf.Abs (speed);//move left
 		}
 

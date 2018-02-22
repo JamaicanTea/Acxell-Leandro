@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Basket : MonoBehaviour {
-	public GUIText scoreGT;
+	public Text scoreGT;
 	
 	// Update is called once per frame
 	void Start ()
@@ -11,7 +12,7 @@ public class Basket : MonoBehaviour {
 		//finding reference for GameObject ScoreCounter
 		GameObject scoreGO = GameObject.Find ("ScoreCounter");
 		//getting the GUIText component for mentioned GameObject
-		scoreGT = scoreGO.GetComponent<GUIText>();
+		scoreGT = scoreGO.GetComponent<Text>();
 		//Set starting number to 0
 		scoreGT.text ="0";
 	}
@@ -34,7 +35,7 @@ public class Basket : MonoBehaviour {
 	{
 		//lets the basket detects what hit it
 		GameObject collidedWith = coll.gameObject;
-		if (collidedWith.tag == "Apple") 
+		if (collidedWith.tag == "Apple" && gameObject != null) 
 		{
 			Destroy (collidedWith);
 		}
