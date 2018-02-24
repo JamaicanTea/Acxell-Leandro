@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33356275276005570}
   - component: {fileID: 135195044983342248}
   - component: {fileID: 23623746000393398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33621094744176386}
   - component: {fileID: 136944041063241064}
   - component: {fileID: 23904148753076446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4520668478268216}
-  m_Layer: 0
+  - component: {fileID: 114600213137838480}
+  m_Layer: 8
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +84,7 @@ Transform:
   m_GameObject: {fileID: 1669692090953110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 4, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 4.313015, y: 4.3130145, z: 4.3130145}
   m_Children:
   - {fileID: 4129392533003344}
   - {fileID: 4602557463107970}
@@ -181,6 +182,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233325396121490}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114600213137838480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669692090953110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aada592b87588944b77905fa5b45db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 1650859144500748, guid: 5c4883fe3cf813b44a106a224153e7d5,
+    type: 2}
+  speed: 1
+  leftAndRightEdge: 10
+  chanceToChangeDirections: 0.1
+  secondsBetweenAppleDrops: 1
 --- !u!135 &135195044983342248
 SphereCollider:
   m_ObjectHideFlags: 1
